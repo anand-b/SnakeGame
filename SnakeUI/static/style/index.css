@@ -1,0 +1,90 @@
+#arena {
+	float:left;
+	background-color:green;
+	box-shadow : inset 20px 2px 199px #1f1f1f;
+}
+.content {
+	width:100%;
+	margin:0px auto;
+	position:relative;
+	font-family:sans-serif;
+}
+#title {
+    font-size:32px;
+    font-weight:bold;
+}
+.hide {
+	display:none;
+}
+#arena .arena-row {
+	width:100%;
+	margin:0px;
+}
+#arena.arena-configure-food .arena-cell:hover {
+	background-color:#ffdd00;
+	opacity:0.5;
+}
+#arena.arena-configure-wall .arena-cell:hover {
+	background-color:black;
+	opacity:0.5;
+}
+#arena .arena-cell {
+	float:left;
+	padding:0px;
+	margin:0px;
+	outline:0px;
+}
+#arena .arena-cell.food {
+	background-color:#ffdd00;
+}
+#arena .arena-cell.snake {
+	background-color:white;
+}
+#arena .arena-cell.snake.head {
+	background-color:#CCC;
+}
+#arena .arena-cell.blocked {
+	background-color:#8d0404;
+	border: #470000 2px solid;
+    box-sizing: border-box;
+}
+#action-bar {
+	float:left;
+	padding:0 20px;
+	text-align: center;
+	border-right:#000 thin solid;
+}
+#action-bar select {
+    width:250px;
+    padding:6px 10px;
+}
+#action-bar button {
+	background-color:#bb0909;
+	color:white;
+	padding:8px 10px;
+	margin: 10px 0;
+	border:#860000 2px solid;
+	display:block;
+    width:250px;
+}
+#score, #steps {
+    font-weight:900;
+    font-size:40px;
+}
+#predefined-worlds {
+	float:left;
+	margin-left:20px;
+	text-align: center;
+}
+#predefined-worlds .world {
+    background-color:#333;
+	color:white;
+	padding:8px 10px;
+	margin: 10px 0;
+	border:#000 2px solid;
+	display:inline-block;
+}
+.trail {
+    border-radius:5px;
+    background-color:#fff;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SnAIke</title>
+		<link rel="stylesheet" href="/style/index.css">
+		<script src="/lib/jquery.min.js"></script>
+		<script src="/lib/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div id="arena"></div>
+			<div id="action-bar">
+				<p id="title">SnAIke</p>
+				<form onsubmit="return false;">
+					<div class="action-btns">
+						<select id="select-method">
+							<option value="astar" title="A* Search" selected>A* Search</option>
+							<option value="greedy" title="Greedy Best-First Search">Greedy Best-First Search</option>
+							<option value="dijkstra" title="Dijkstra's Shortest Path Search">Dijkstra's Shortest Path Search</option>
+						</select>
+						<button id="btn-food-setter">Set food position</button>
+						<button id="btn-wall-setter">Build walls</button>
+						<button id="btn-run">Run</button>
+						<h2>Score</h2>
+						<div id="score">0</div>
+						<h2>Step Count</h2>
+						<div id="steps">0</div>
+					</div>
+					<div class="confirmation-btns hide">
+						<button id="btn-ok">Apply</button>
+						<button id="btn-cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+			<div id="predefined-worlds">
+				<p id="title">Default Worlds</p>
+				<button class="world" data-id="0">World 1</button>
+				<button class="world" data-id="1">World 2</button>
+				<button class="world" data-id="2">World 3</button>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</body>
+	<script src="/js/index.js"></script>
+	<script src="/js/worlds.js"></script>
+</html>
